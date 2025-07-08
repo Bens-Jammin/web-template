@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+:root {
+    --background: #1e1e2e;
+    --borders: #45475a;
+    --button: #cdd6f4;
+    --button-text: #333546;
+    --text: #9399b2;
+    --highlight1: #f38ba8;
+    --highlight2: #fab387;
+    --highlight3: #f9e2af;
+    --highlight4: #a6e3a1;
+    --border-rad: 5px;
+    --border-width: 3px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.7em;
+}
+
+/* Why do i have to do this to get the font sized properly ? h1/2 apply correctly */
+:root h3 { font-size: 1.4em; }
+:root h4 { font-size: 1.3em; }
+body {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+/* why does this not apply to the options on select ? */
+select {
+    border: var(--border-width) solid var(--borders);
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 5px;
+}
+
+
+input {
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+button {
+    background-color: var(--button);
+    color: var(--button-text);
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    border-radius: 0px;
+    padding: 5px;
+    margin: 10px;
+}
+
+h1 { color: var(--highlight1); }
+h2 { color: var(--highlight2); }
+h3 { color: var(--highlight3); }
+h4 { color: var(--highlight4); }
+
+hr { border: var(--border-width) solid var(--borders); border-radius: 5px; width: 90%; }
